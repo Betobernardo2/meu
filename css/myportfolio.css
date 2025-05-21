@@ -1,0 +1,270 @@
+body{
+    height:100vh;
+    font-size:16px;
+     font-family: "Helvetica", "Lucida Grande", sans-serif;
+}
+
+@media (max-width: 939px) {
+body {
+font-size:12px;
+}
+}
+
+@media screen {
+body {
+font-size: 16px;
+}
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+  @media screen{
+html {
+    font-size: 100%;
+}
+}
+
+/* Smartphones (retrato e paisagem) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* Smartphones (paisagem) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* Smartphones (retrato) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* iPads (retrato e paisagem) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* iPads (paisagem) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* iPads (retrato) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* Desktops e laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* Resoluções grandes ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+body {
+font-size: 16px;
+}}
+
+header.logotipo{
+background:linear-gradient(white, grey);
+}
+
+.logotipo a{
+text-decoration:none;
+color:black;
+}
+
+.logotipo img{
+    top:10px;
+left:30px;
+position:relative;
+font-size:32px;
+}
+
+.logotipo ul{
+    text-align:right;
+}
+
+.logotipo li{
+    display:inline-block;
+    list-style-type:none;
+    padding:0 20px;
+}
+
+.logotipo :hover li{
+ transform:scale(1.30);
+    opacity:2.3;
+  transition: 0.5s;
+
+}
+
+.logotipo li a{
+    text-decoration:none;
+    color:darkblue;
+}
+
+button{
+    border:0;
+    border-radius:100px;
+}
+
+.menu h1{
+    padding-top:60px;
+    padding-left:32px;
+     font-size:50px;
+     color:black;
+     text-shadow: 10px 1px grey;
+}
+
+section.menu{
+    width:400px;
+    float:left;
+    padding-left:20px;
+    color:black;
+    font-weight: bold;
+text-transform: uppercase;
+
+}
+
+main.image{
+    float:right;
+}
+
+.image img{
+    width:300px;
+    padding-right:25px;
+    padding-top:60px;
+    padding-bottom:20px;
+    border-radius: 15px;
+border-radius:160px;
+}
+
+footer{
+clear:both;
+color:black;
+text-align:right;
+padding:20px 0;
+position:absolute;
+bottom: 0%;
+left: 0;
+width:100%;
+    border-top:solid;
+    background-color:pink;
+}
+
+/** CSS **/
+.box-cookies.hide {
+    display: none !important;
+}
+
+.box-cookies {
+    position: fixed;
+    background: rgba(14, 23, 39, .8);
+    width: 100%;
+    max-width: 980px;
+    z-index: 998;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px 0px 0px 0px;
+    border: dashed 3px rgba(255, 255, 255, 0.6);
+    border-bottom: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-cookies a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.box-cookies a:hover {
+    text-decoration: underline;
+}
+
+.msg-cookies,
+.box-cookies .btn-cookies {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.box-cookies .btn-cookies {
+    cursor: pointer;
+    height: auto;
+    margin: 11px 10px 10px;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.msg-cookies {
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .box-cookies {
+        flex-direction: column;
+        border-left: none;
+    }
+}
+
+(() => {
+    if (!localStorage.pureJavaScriptCookies) {
+        document.querySelector(".box-cookies").classList.remove('hide');
+    }
+
+    const acceptCookies = () => {
+        document.querySelector(".box-cookies").classList.add('hide');
+        localStorage.setItem("pureJavaScriptCookies", "accept");
+    };
+
+    const btnCookies = document.querySelector(".btn-cookies");
+
+    btnCookies.addEventListener('click', acceptCookies);
+})();

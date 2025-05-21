@@ -1,0 +1,74 @@
+body{
+    height:100vh;
+    font-family: "Helvetica", "Lucida Grande", sans-serif;
+}
+
+header.logotipo{
+background:linear-gradient(white, grey);
+padding-bottom:3%;
+}
+
+.logotipo img{
+    top:20px;
+left:50px;
+position:relative;
+font-size:32px;
+}
+
+.logotipo a{
+text-decoration:none;
+color:black;
+}
+
+@media (max-width: 939px) {
+body {
+font-size: 12px;
+}
+}
+
+@media screen {
+body {
+font-size: 16px;
+}
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p.bem{
+    justify-content:center;
+align-items:center;
+}
+
+h1{
+text-align:center;
+box-shadow: 20px 20px 20px orange;
+justify-content:center;
+align-items:center;
+}
+
+section.manutenção{
+    float:left;
+    position:relative;
+    top:20px;
+    left:20px;
+}
+
+section.software{
+    float:right;
+    top:20px;
+    position:relative;
+    padding-right:60px;
+}
+
+.bem p{
+    text-align:center;
+}
+
+div.conteúdo{
+    clear:both;
+}
+

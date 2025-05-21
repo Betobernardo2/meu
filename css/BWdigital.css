@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    font-family: "Helvetica", "Lucida Grande", sans-serif;
+
+}
+
+@media (max-width: 939px) {
+body {
+font-size: 12px;
+}
+}
+
+@media screen {
+body {
+font-size: 16px;
+}
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+  @media screen{
+html {
+    font-size: 100%;
+}
+}
+
+
+.interface{
+    background-color:black;
+}
+
+.logo img{
+    padding-top:20px;
+    padding-left:50px;
+    position:relative;
+}
+
+/*estilo do cabeçalho  */
+.header{
+padding:1280px;
+}
+
+header> .interface{
+    align-items:center;
+    justify-content:space-between;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    transition:2s;
+}
+
+header nav ul{
+text-align:right;
+align-items:center;
+}
+
+header nav li{
+    list-style-type:none;
+    display:inline-block;
+     padding:0 20px;
+}
+
+button{
+    font-size:16px;
+    background-color:green;
+    border:0;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+header a :houver{
+    color:white;
+    transform:scale(1.05);
+
+}
+
+header.btn-contacto button:houver{
+    box-shadow:0px 0px 8px white;
+    opacity:2.3;
+
+}
+
+section.boas-vinda{
+background-color:black;
+font-weight: bold;
+text-transform: uppercase;
+color:white;
+}
+
+h1{
+    text-align:center;
+    opacity:0.5;
+    background-color:orange;
+}
+
+p{
+    text-align:center;
+}
+
+main.conteudo{
+    color:pink;
+    padding-top:10px;
+    padding-left:20px;
+ background-image:url('file:///home/limpador/Documents/meus projectos/My Portfolio/imagens/minha/Untitled.png');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+    /* dimensiona a imagem image 20px na horizontal e 40px na vertical */
+opacity:100%;
+}
+
+.conteudo li{
+    color:white;
+    text-transform: uppercase;
+
+}
+
+.conteudo h2{
+    padding-left:25px;
+    color:pink;
+    background-color:;
+}
+
+section.service{
+float:right;
+}
+
+/*editando o painel.produtos  */
+.painel {
+margin: 10px 0;
+padding: 10px;
+}
+
+.novidades{
+background-color:#5dcdc;}
+
+.novidades {
+float: left;
+padding-left:20px;
+}
+
+/* editando produtos  */
+.painel li {
+display: inline-block;
+vertical-align: ;
+width: 140px;
+margin: 2px;
+}
+
+.painel a {
+color: #333;
+font-size: 14px;
+text-align: center;
+text-decoration: none;
+}
+
+ol figure img{
+width:130px;
+height:130px;
+}
+
+footer{
+clear:both;
+color:black;
+text-align:right;
+padding:20px 0;
+position:relative;
+bottom: 0%;
+left: 0;
+width:100%;
+    border-top:solid;
+    background-color:pink;
+}
+
+/** CSS **/
+.box-cookies.hide {
+    display: none !important;
+}
+
+.box-cookies {
+    position: fixed;
+    background: rgba(14, 23, 39, .8);
+    width: 100%;
+    max-width: 980px;
+    z-index: 998;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px 0px 0px 0px;
+    border: dashed 3px rgba(255, 255, 255, 0.6);
+    border-bottom: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-cookies a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.box-cookies a:hover {
+    text-decoration: underline;
+}
+
+.msg-cookies,
+.box-cookies .btn-cookies {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.box-cookies .btn-cookies {
+    cursor: pointer;
+    height: auto;
+    margin: 11px 10px 10px;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.msg-cookies {
+    padding: 8px;
+}
+
+}
+
+(() => {
+    if (!localStorage.pureJavaScriptCookies) {
+        document.querySelector(".box-cookies").classList.remove('hide');
+    }
+
+    const acceptCookies = () => {
+        document.querySelector(".box-cookies").classList.add('hide');
+        localStorage.setItem("pureJavaScriptCookies", "accept");
+    };
+
+    const btnCookies = document.querySelector(".btn-cookies");
+
+    btnCookies.addEventListener('click', acceptCookies);
+})();

@@ -1,0 +1,195 @@
+body{
+    height:100vh;
+     font-family:"Helvetica" "Lucida Grande", sans-serif;
+}
+
+@media (max-width: 939px) {
+body {
+font-size: 12px;
+}
+}
+
+@media screen {
+body {
+font-size: 16px;
+}
+}
+
+/* Smartphones (retrato e paisagem) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (paisagem) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (retrato) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (retrato e paisagem) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (paisagem) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (retrato) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops e laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Resoluções grandes ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header.logotipo{
+    background:linear-gradient(white, grey);
+    padding-bottom:3%;
+}
+
+.logotipo img{
+    top:20px;
+    left:50px;
+       position:relative;
+     font-size:32px;
+}
+
+.logotipo a{
+    text-decoration:none;
+    color:black;
+}
+
+section.contacto{
+padding-left:20px;
+}
+
+.contacto h1{
+    background-color:black;
+    color:white;
+    padding-left:25px;
+}
+
+div.social{
+    padding-left:20px;
+}
+
+.social h2{
+    color:white;
+    background-color:black;
+    padding-left:25px;
+}
+
+.social ul{
+    text-align:left;
+}
+
+.social li{
+    margin-left: 25px;
+    list-style-type:none;
+    display:inline;
+}
+
+.social a{
+    text-decoration:none;
+}
+
+.formulario{
+    width: 300px;
+    padding: 50px;
+}
+
+
+footer{
+clear:both;
+color:black;
+text-align:right;
+padding:20px 0;
+position:relative;
+left: 0;
+width: 100%;
+    border-top:solid;
+    background-color:pink;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div.field{
+    padding-top:20px;
+}
+
+.social:hover a {
+
+  opacity: 0.3;
+  transition: 0.5s;
+
+}
+
+.social:hover a:hover {
+
+  opacity: 1;
+  transition: 0.5s;
+
+}
